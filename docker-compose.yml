@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  scotty-server:
+    image: scotty-server
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 5000:5000
+  scotty-client:
+    image: scotty-client
+    build: .
+    command: yarn start
