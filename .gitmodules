@@ -1,0 +1,6 @@
+[submodule "scotty-server"]
+	path = scotty-server
+	url = https://github.com/robence/scotty-server
+[submodule "scotty-client"]
+	path = scotty-client
+	url = https://github.com/robence/scotty-client
