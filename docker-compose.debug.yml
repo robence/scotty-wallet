@@ -4,6 +4,9 @@ services:
   scotty-server:
     image: scotty-server
     build: .
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
     environment:
       NODE_ENV: development
     ports:
@@ -15,4 +18,5 @@ services:
     image: scotty-client
     build: .
     command: yarn start
-
+    ports:
+      - 5101:5000
